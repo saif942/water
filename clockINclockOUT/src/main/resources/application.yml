@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres  # Change to your DB name and server URL
+    username: myusername  # PostgreSQL username
+    password: mysecretpassword  # PostgreSQL password
+    driver-class-name: org.postgresql.Driver
+    platform: postgres
+
+  jpa:
+    hibernate:
+      ddl-auto: update  # or 'create', 'validate', 'none'
+    show-sql: true  # Optional: to show SQL queries in logs
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect  # Hibernate dialect for PostgreSQL
+        format_sql: true
+
+server:
+  port:8082
