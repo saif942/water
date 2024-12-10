@@ -1,16 +1,13 @@
 package com.water.login.clockINclockOUT.controller;
 
-import com.water.login.clockINclockOUT.Exception.WaterCheckINException;
 import com.water.login.clockINclockOUT.dto.UserClockInDTO;
 import com.water.login.clockINclockOUT.dto.UserClockOutDTO;
 import com.water.login.clockINclockOUT.service.ClockInService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequestMapping("/userController")
 public class LoginController {
 
     private final ClockInService clockInService;

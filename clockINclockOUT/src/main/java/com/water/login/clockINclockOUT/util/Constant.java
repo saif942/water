@@ -10,6 +10,7 @@ public class Constant {
     public static final String USER_NOT_IN_CHECK_IN_OUT="User not found";
     public static final String USER_ALREADY_IN="User is already checked IN";
     public static final String USER_ALREADY_OUT="User is already checked OUT";
+    public static final String INVALID_USERID_PASSWORD="Invalid userid and password provided";
     //table name
     public static final String USER_TABLE="Water_Employs";
     public static final String IN_OUT_LOG_TABLE = "Check_in_out_log" ;
